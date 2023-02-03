@@ -123,6 +123,16 @@
 		@include _768 {
 			padding-top: 0;
 		}
+
+		& p {
+			/* padding-top: 5px;
+			line-height: 160%;
+			font-size: 0.8125rem;
+			@include _768 {
+				padding-top: 20px;
+				font-size: 1rem;
+			} */
+		}
 	}
 
 	// .accent-section__title
@@ -136,12 +146,6 @@
 	// .accent-section__text
 
 	&__text {
-		padding-top: 5px;
-		line-height: 160%;
-		font-size: 0.8125rem;
-		@include _768 {
-			padding-top: 20px;
-			font-size: 1rem;
-		}
+		
 	}
 }

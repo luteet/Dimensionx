@@ -1,140 +1,130 @@
 .intro {
 
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    @include _992 {
-        display: block;
-    }
+	@include _992 {
+		display: block;
+	}
 
-    // .intro__bg
+	// .intro__bg
 
-    &__bg {
+	&__bg {
 
-        background: #F9FDFF;
+		background: #F9FDFF;
 
-        // .intro__bg--decor
+		// .intro__bg--decor
 
-        &--decor {
-        }
+		&--decor {
+		}
 
-        // .intro__bg--text
+		// .intro__bg--text
 
-        &--text {
-            margin-left: -20px;
+		&--text {
+			margin-left: -20px;
 
-            padding-top: 40px;
-            @include _768 {
-                margin-left: -20px;
-                padding-top: 70px;
-            }
-            
-            @include _992 {
-                padding-top: 130px;
-                margin-left: max(10px, calc(50% - 835px));
-            }
-        }
+			padding-top: 40px;
+			@include _768 {
+				margin-left: -20px;
+				padding-top: 70px;
+			}
+			
+			@include _992 {
+				padding-top: 130px;
+				margin-left: max(10px, calc(50% - 835px));
+			}
+		}
 
-        // .intro__bg--dots
+		// .intro__bg--dots
 
-        &--dots {
-            
-        }
+		&--dots {
+			
+		}
 
-        // .intro__bg--dots-item
+		// .intro__bg--dots-item
 
-        &--dots-item {
-            
-            &:nth-child(1) {
-                @include _992 {
-                    margin-left: max(10px, calc(50% - 835px));
-                    margin-top: 140px;
-                    width: 95px; height: 262px;
-                }
-            }
-        }
-    }
+		&--dots-item {
+			
+			&:nth-child(1) {
+				@include _992 {
+					margin-top: 140px;
+					width: 95px; height: 262px;
+					left: max(10px, calc(50% - 835px));
+				}
+			}
+		}
+	}
 
-    // .intro__learn-more
+	// .intro__learn-more
 
-    &__learn-more {
-        position: absolute;
-        left: 40px; top: 50%;
-        transform: translate(0,-50%); 
+	&__learn-more {
+		position: absolute;
+		left: 40px; top: 50%;
+		transform: translate(0,-50%); 
 
-        display: none;
-        @media (min-width: 1650px) {
-            display: flex;
-        }
-    }
+		display: none;
+		@media (min-width: 1650px) {
+			display: flex;
+		}
+	}
 
-    // .intro__content
+	// .intro__content
 
-    &__content {
-        width: 100%;
-        padding: 64px 0 20px 0;
-        @include _768 {
-            padding: 64px 0 50px 0;
-        }
-        @include _992 {
-            width: 50%;
-            padding: 150px 0 110px 0;
-        }
-        
-        @media (min-width: 1336px) {
-            padding: 211px 0 187px 0;
-        }
-    }
+	&__content {
+		width: 100%;
+		padding: 64px 0 20px 0;
+		@include _768 {
+			padding: 64px 0 50px 0;
+		}
+		@include _992 {
+			width: 50%;
+			padding: 150px 0 110px 0;
+		}
+		
+		@media (min-width: 1336px) {
+			padding: 211px 0 187px 0;
+		}
+	}
 
-    // .intro__title
+	// .intro__title
 
-    &__title {
-    }
+	&__title {
+	}
 
-    // .intro__text
+	// .intro__text
 
-    &__text {
-        padding-top: 15px;
-        font-size: 0.8125rem;
-        @include _768 {
-            font-size: 1rem;
-            padding-top: 30px;
-        }
-        @include _992 {
-            font-size: 1.125rem;
-        }
-        line-height: 160%;
-        max-width: 531px;
-    }
+	&__text {
+		
+	}
 
-    // .intro__image
+	// .intro__image
 
-    &__image {
+	&__image {
 
-        aspect-ratio: 1/.735;
-        text-align: right;
+		aspect-ratio: 1/.735;
+		text-align: right;
 
-        position: relative;
-        margin: 0 -10px;
-        @include _992 {
-            position: absolute;
-            right: 0; top: 0;
-            margin: 0;
-            aspect-ratio: auto;
-            width: 50%; height: 100%;
-        }
+		position: relative;
+		margin: 0 -10px;
+		@include _992 {
+			position: absolute;
+			right: 0; top: 0;
+			margin: 0;
+			aspect-ratio: auto;
+			width: 50%; height: 100%;
+		}
 
-        // .intro__image--img
+		// .intro__image--img
 
-        &--img {
-            position: absolute;
-            right: 0; top: 0;
-            @include _992 {
-                position: static;
-                height: 100%; width: auto;
-            }
-            object-fit: cover;
-            width: 100%; height: 100%;
-        }
-    }
+		&--img {
+			position: absolute;
+			right: 0; top: 0;
+			@include _992 {
+				position: static;
+				height: 100%; width: auto;
+			}
+			object-fit: cover;
+			width: 100%; height: 100%;
+		}
+	}
 }
