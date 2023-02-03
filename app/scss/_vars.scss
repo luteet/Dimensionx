@@ -1,0 +1,38 @@
+
+
+$containerPadding: 10;
+
+:root {
+    --title-font: 'Prosto One', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+    
+    --accent: #437CE5;
+
+    --white: #FFF;
+    --black: #000;
+    --dark: #041326;
+    --dark-blue: #002A5C;
+    --blue: #437CE5;
+    --blue-light: #6497F8;
+    --lightskyblue: #92B8FF;
+    --body: #708195;
+    --body-light: #8BA0B8;
+    --gradient: linear-gradient(201.18deg, #6497F8 14.23%, #3F77DF 86.3%);
+    --gradient-light: linear-gradient(180deg, #6CCAFF 0%, #467DE2 100%);
+    --service-image-bg: url("data:image/svg+xml,%3Csvg viewBox='0 0 446 185' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.07' d='M-171.589 -167.105C-180.536 -128.515 -153.344 -90.9394 -115.474 -71.2356C-72.6715 -48.9726 -89.6519 -32.8444 -70.1903 -9.90667C-49.4993 14.4802 -26.5883 21.8325 -12.3053 49.3241C14.2608 100.458 78.9678 82.7633 127 82.1734C172.096 81.635 201.314 103.585 246.473 135.263C246.768 135.466 340.91 238.9 385.376 137.455C393.628 118.657 395.683 103.184 399.238 92.8858C413.186 52.2965 456.927 54.0392 523.361 30.6286C607.436 0.989617 635.167 -81.7266 545.485 -110.216C511.014 -121.177 481.126 -122.933 448.105 -137.005C380.615 -165.767 387.97 -223.613 329.411 -249.052C308.441 -260.331 276.841 -263.133 255.282 -260.388C172.312 -249.832 139.841 -222.29 80.046 -238.017C59.7099 -243.372 34.4289 -253.477 4.11608 -257.705C-73.932 -268.669 -157.506 -227.818 -171.589 -167.105Z' fill='%233D77FF'/%3E%3Cpath opacity='0.1' d='M128.998 136C140.044 136 148.998 127.046 148.998 116C148.998 104.954 140.044 96 128.998 96C117.952 96 108.998 104.954 108.998 116C108.998 127.046 117.952 136 128.998 136Z' fill='url(%23paint0_linear_308_3535)'/%3E%3Cpath opacity='0.1' d='M80.498 140C85.1925 140 88.998 136.194 88.998 131.5C88.998 126.806 85.1925 123 80.498 123C75.8036 123 71.998 126.806 71.998 131.5C71.998 136.194 75.8036 140 80.498 140Z' fill='url(%23paint1_linear_308_3535)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_308_3535' x1='128.999' y1='131.476' x2='128.999' y2='98.1012' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232765FF'/%3E%3Cstop offset='1' stop-color='%236C9CFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_308_3535' x1='80.4985' y1='138.077' x2='80.4985' y2='123.893' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232765FF'/%3E%3Cstop offset='1' stop-color='%236C9CFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    
+
+    --container-padding: 10px;
+}
+
+@font-face {
+    @include font-include('Prosto One', 400, swap, normal, 'ProstoOne-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}

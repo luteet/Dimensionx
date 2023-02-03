@@ -1,0 +1,198 @@
+.features {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include _992 {
+        flex-direction: row-reverse;
+        &._reverse {
+            flex-direction: row;
+            min-height: 532px;
+        }
+
+        &._reverse &__content {
+            flex: 0 1 36%;
+        }
+    }
+
+    // .features__bg
+
+    &__bg {
+
+        // .features__bg--decor
+
+        &--decor {
+            & img {
+                width: 100%; height: auto;
+                min-width: 1000px;
+            }
+        }
+
+        // .features__bg--dots
+
+        &--dots {
+        }
+
+        // .features__bg--dots-item
+
+        &--dots-item {
+            &:nth-child(1) {
+                @include _992 {
+                    right: 0; top: 90px;
+                    width: 266px; height: 96px;
+                    margin-right: max(30px, calc(50% - 850px));
+                }
+            }
+        }
+
+        // .features__bg--text
+
+        &--text {
+            margin-left: -25px;
+            margin-top: 15px;
+            @include _992 {
+                margin-left: max(30px, 50%);
+                margin-top: 7%;
+            }
+        }
+    }
+
+    &._reverse &__bg {
+        &--dots-item {
+            &:nth-child(1) {
+                @include _992 {
+                    left: max(30px, calc(50% - 850px)); bottom: 90px; top: auto;
+                    width: 266px; height: 96px;
+                }
+            }
+        }
+        &--text {
+            margin-left: -25px;
+            margin-top: 15px;
+            @include _992 {
+                margin-left: max(30px, calc(50% - 875px));
+                margin-top: 5%;
+            }
+        }
+    }
+
+    // .features__image
+
+    &._alt &__image {
+        @include _992 {
+            flex: 0 1 50%;
+        }
+    }
+
+    &__image {
+
+        width: calc(100% + 10px);
+        padding-top: 20px;
+        @include _992 {
+            padding-top: 0;
+            width: auto;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 0 1 58%;
+            padding-right: 100px;
+            margin: -15px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        margin: -5px;
+
+        &._alt {
+            
+            @include _992 {
+                position: absolute;
+                right: 0; top: 15px;
+                width: calc(50% + 120px); height: calc(100% + 0px);
+                padding-right: 0;
+            }
+        }
+
+        // .features__image--item
+
+        &--item {
+            margin: 5px;
+            flex: 1 1 auto;
+            &._min {
+                @include _992 {
+                    max-width: 221px;
+                }
+            }
+
+            //aspect-ratio: 1/0.6;
+            padding-top: 54%;
+            min-height: 170px;
+            @include _992 {
+                margin: 15px;
+                min-height: 339px;
+            }
+            position: relative;
+
+            & img {
+                position: absolute;
+                left: 0; top: 0;
+                border-radius: 10px;
+                @include _992 {
+                    border-radius: 30px;
+                    object-position: var(--pos,0);
+                }
+                width: 100%; height: 100%;
+                object-fit: cover;
+
+                
+            }
+        }
+
+        &._alt &--item._min {
+            @include _992 {
+                padding-top: 0%;
+                height: auto;
+            }
+        }
+
+        &._alt &--item._min img {
+            @include _992 {
+                border-radius: 30px 10px 10px 10px;
+            }
+        }
+
+        &._alt &--item {
+            @include _992 {
+                flex: 0 1 calc(100% - 130px);
+                height: 100%;
+                padding-top: 0;
+            }
+        }
+
+        &._alt &--item img {
+            @include _992 {
+                border-radius: 80px 0px 0px 0px;
+            }
+        }
+    }
+
+    // .features__content
+
+    &._alt &__content {
+        @include _992 {
+            flex: 0 1 50%;
+            padding-right: 50px;
+        }
+    }
+
+    &._alt &__content p {
+        @include _992 {
+            max-width: 568px;
+        }
+    }
+
+    &__content {
+        flex: 0 1 42%;
+    }
+}

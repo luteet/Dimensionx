@@ -1,0 +1,156 @@
+.footer {
+
+	flex: 0 0 auto;
+	overflow: hidden;
+
+	display: flex;
+	
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	padding: 35px 0;
+
+	@include _768 {
+		text-align: left;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		padding: 0;
+	}
+
+	@include _992 {
+		justify-content: stretch;
+	}
+
+	// .footer__copy
+
+	&__copy {
+		
+		@include _768 {
+			padding: 15px 20px 15px 0;
+		}
+		@media (min-width: 1300px) {
+			padding: 15px 51px 15px 0;
+		}
+	}
+
+	// .footer__privacy
+
+	&__privacy {
+		padding: 15px 0 0 0;
+		@include _768 {
+			padding: 15px 0;
+		}
+		& a {
+			color: var(--body);
+		}
+	}
+
+	// .footer__nav
+
+	&__nav {
+
+		padding-top: 15px;
+
+		@include _768 {
+			flex-direction: row;
+			padding-top: 0;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		flex: 1 1 100%;
+		@include _992 {
+			flex: 1 1 auto;
+		}
+
+		display: flex;
+		
+		flex-direction: column;
+		
+
+		// .footer__nav--list
+
+		&--list {
+			display: flex;
+			flex-direction: column;
+
+			margin: -7.5px 0;
+
+			flex: 1 1 auto;
+
+			@include _768 {
+				margin: 0;
+				flex-wrap: wrap;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				padding-right: 15px;
+			}
+
+			@include _992 {
+				flex: 0 1 auto;
+				justify-content: stretch;
+			}
+
+			
+			@media (min-width: 1300px) {
+				padding-right: 30px;
+			}
+		}
+
+		// .footer__nav--item
+
+		&--item {
+		}
+
+		// .footer__nav--link
+
+		&--link {
+			display: block;
+			text-align: center;
+
+			text-transform: uppercase;
+			padding: 7.5px 15px;
+			@include _768 {
+				padding: 33px 15px;
+			}
+			@media (min-width: 1300px) {
+				padding: 33px 30px;
+			}
+
+			font-weight: 600;
+			font-size: 0.875rem;
+			line-height: 160%;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			opacity: 0.8;
+			color: var(--body);
+
+			transition: color .2s ease-in-out;
+			&:hover {
+				color: var(--blue);
+			}
+			
+			&:active {
+				color: var(--blue-light);
+			}
+		}
+
+		// .footer__nav--social
+
+		&--social {
+			padding-top: 20px;
+			@include _768 {
+				padding-top: 0;
+			}
+		}
+	}
+
+	// .footer__social
+
+	&__social {
+	}
+}

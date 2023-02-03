@@ -1,0 +1,39 @@
+@@include("html/_header.html", {
+    "link_1": '', 
+    "link_2": '',
+    "link_3": '',
+})
+
+	<main class="main">
+        <section class="not-found section-padding section-container full-section">
+            <div class="not-found__bg section-bg">
+                <div class="not-found__bg--decor section-bg__decor">
+                    <img src="img/404/decor.svg" width="0" height="0" alt="">
+                </div>
+                <div class="not-found__bg--text section-bg__text">
+                    Error Error Error
+                </div>
+            </div>
+            <div class="not-found__block">
+                <div class="not-found__image">
+                    <picture>
+                        <source srcset="img/404/404.webp" type="image/webp">
+                        <img src="img/404/404.png" alt="" width="544" height="305" loading="lazy">
+                    </picture>
+                </div>
+                <div class="not-found__content text-content txt-center">
+                    <h2>
+                        <strong>Page</strong> no found
+                    </h2>
+                    <p>
+                        We searched everywhere but didn't find this page
+                    </p>
+                </div>
+                <a href="#" class="not-found__btn btn" aria-label="Go to home">
+                    <span>&nbsp; &nbsp; Go to home &nbsp; &nbsp;</span>
+                </a>
+            </div>
+        </section>
+	</main>
+
+@@include("html/_footer.html")

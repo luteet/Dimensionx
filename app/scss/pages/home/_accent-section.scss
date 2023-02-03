@@ -1,0 +1,147 @@
+.accent-section {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	&._start {
+		align-items: flex-start;
+		flex-direction: row;
+		text-align: left;
+	}
+	text-align: center;
+	padding-top: 35px; padding-bottom: 35px;
+	@include _768 {
+		text-align: left;
+		flex-direction: row;
+
+		&._start {
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		&._start &__content {
+			max-width: 625px;
+		}
+		padding-top: 50px; padding-bottom: 50px;
+	}
+	
+	@include _992 {
+		padding-top: 90px; padding-bottom: 90px;
+	}
+
+	
+
+	// .accent-section__bg
+
+	&__bg {
+
+		// .accent-section__bg--decor
+
+		&--decor {
+		}
+
+		// .accent-section__bg--dots
+
+		&--dots {
+		}
+
+		// .accent-section__bg--dots-item
+
+		&--dots-item {
+			@include _992 {
+				&:nth-child(1) {
+					margin-left: max(35px, calc(50% - 900px));
+					top: 50%; transform: translate(0,50%);
+					width: 267px; height: 96px;
+				}
+	
+				&:nth-child(2) {
+					left: auto; right: 0;
+					margin-right: max(35px, calc(50% - 1000px));
+					top: 50%; transform: translate(0,-50%);
+					width: 96px; height: 267px;
+				}
+			}
+			
+		}
+
+		// .accent-section__bg--text
+
+		&--text {
+			margin-top: 125px;
+			left: 50%;
+			transform: translate(-50%,0);
+
+			@include _992 {
+				left: 0;
+				transform: translate(0,0);
+				margin-top: 53px;
+				margin-left: max(10px, calc(50% - 870px));
+			}
+		}
+	}
+
+	// .accent-section__image
+
+	&__image {
+
+		width: 93px;
+		&._min {
+			width: 30px;
+			flex: 0 0 30px;
+			margin-right: 20px; margin-top: 15px;
+		}
+		aspect-ratio: 1/1;
+		@include _768 {
+			flex: 0 0 225px;
+			width: 225px;
+			margin-right: 20px;
+
+			&._min {
+				flex: 0 0 110px;
+				width: 110px;
+			}
+		}
+		@include _992 {
+			margin-right: 68px;
+			&._min {
+				margin-right: 38px;
+			}
+		}
+
+		& img {
+			width: 100%; height: 100%;
+			object-fit: contain;
+			object-position: center center;
+		}
+	}
+
+	// .accent-section__content
+
+	&__content {
+		padding-top: 15px;
+		@include _768 {
+			padding-top: 0;
+		}
+	}
+
+	// .accent-section__title
+
+	&__title {
+		&.main-title {
+			color: var(--white);
+		}
+	}
+
+	// .accent-section__text
+
+	&__text {
+		padding-top: 5px;
+		line-height: 160%;
+		font-size: 0.8125rem;
+		@include _768 {
+			padding-top: 20px;
+			font-size: 1rem;
+		}
+	}
+}
